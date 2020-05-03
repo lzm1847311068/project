@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- namespace：当前XML对应接口文件是哪个 -->
+<mapper namespace="cn.tedu.mybatis.UserMapper">
+
+
+	<!-- id：为当前resultMap配置取名 type：封装查询结果的数据类型 -->
+	<resultMap id="UserMap" type="cn.tedu.mybatis.User">
+		<id column="id" property="id"/>
+		<result column="username" property="username"/>
+		<result column="password" property="password"/>
+		<result column="age" property="age"/>
+		<result column="phone" property="phone"/>
+		<result column="email" property="email"/>
+		<result column="is_delete" property="isDelete"/>
+		<result column="department_id" property="departmentId"/>
+	</resultMap>
+
+	<!-- id：对应的抽象方法的名称 -->
+	<insert id="addnew">
+		insert into t_user(
+			username,password,age,phone,email
+		) values (
+			#{username},#{password},#{age},#{phone},#{email}
+		)
+	</insert>
+
+	<!--只有一个参数时，#{}里边的内容写什么都可以,比如#{ahjkl}-->
+	<delete id="deleteById">
+		delete from t_user where id = #{id}
+	</delete>
+
+	<delete id="deleteByIds">
+		DELETE FROM t_user WHERE id IN
+		/*
+		collection:当匹配的抽象方法只有1个参数时，如果该参数是`List`集合类型时，该属性取值
+		为`list`，当参数是数组类型时，该属性取值为`array`，当参数是Map集合类型时，该属性取值
+		为`map`，另外，当抽象方法的参数超过1个时，必须在接口中配置`@Param`注解，此处需要配置的
+		属性值就是`@Param`注解中配置的名称，有几个参数，就写几个foreach标签
+
+		item：遍历过程中，获取到的元素的变量名(value值)，是自定义的名称
+		separator：遍历过程中，生成的SQL语句中各元素之间的分隔符号
+		open / close：遍历生成的SQL语句部分的最左侧字符串和最右侧字符串
+		*/
+		<foreach collection="array" item="id"
+				 open="(" separator="," close=")">
+			#{id}
+		</foreach>
+
+	</delete>
+
+
+	<!--如果使用了`<select>`节点，必须在该节点配置`resultType`或`resultMap`其
+		中的1个属性，以指定返回值类型-->
+	<select id="countAll" resultType="java.lang.Integer">
+ 		select count(*) from t_user;
+ 	</select>
+
+	<select id="findById" resultType="cn.tedu.mybatis.User">
+ 		SELECT id, username, password, age, phone, email
+ 			FROM t_user WHERE id=#{id}
+ 	</select>
+
+	<!--查询时名称不一致的解决方案一：起别名-->
+<!--	<select id="findAll" resultType="cn.tedu.mybatis.User">-->
+<!-- 		SELECT id,username,password,age,phone,email,is_delete as isDelete-->
+<!-- 			FROM t_user ORDER BY id ASC-->
+<!-- 	</select>-->
+
+	<!--查询时名称不一致的解决方案二：配置resultMap节点-->
+	<select id="findAll" resultMap="UserMap">
+ 		SELECT id,username,password,age,phone,email,is_delete as isDelete
+ 			FROM t_user ORDER BY id ASC
+ 	</select>
+
+
+	<!--有多个参数时，使用的#{}占位符中的参数也是注解中配置的名称-->
+	<update id="updateEmailById">
+ 		UPDATE t_user SET email=#{email} WHERE id=#{id}
+ 	</update>
+
+	<update id="updatePassword">
+ 		UPDATE t_user SET password=#{password}
+ 	</update>
+
+
+	<!--#{}是预编译的：#{}用于表示某个值，MyBatis会先把`#{}`格式的占位符使用问号`?`表示，并直接编译该SQL语句，
+	编译完成后，执行时，再把问号`?`对应的值填入并执行SQL语句
+		${}不是预编译的：${}可以表示SQL语句中的任何部分，在实际处理时，不是预编译的，MyBatis会
+		先将占位符对应的值与原本配置的SQL语句进行拼接，然后再编译，最终执行-->
+	<select id="find" resultType="cn.tedu.mybatis.User">
+		SELECT
+			id,username,password,age,phone,email
+		FROM
+			t_user
+		<if test="where != null">
+			WHERE
+			${where}
+		</if>
+		<if test="orderBy != null">
+			ORDER BY
+			${orderBy}
+		</if>
+		<if test="offset != null">
+			LIMIT #{offset}, #{count}
+		</if>
+	</select>
+
+
+	<select id="findVOById" resultType="cn.tedu.mybatis.UserVO">
+		select t_user.id, username,
+			password, age,
+			phone, email,
+			is_delete AS isDelete,
+			department_id AS departmentId,
+			name AS departmentName
+		from t_user left join t_department on t_user.department_id = t_department.id
+		where t_user.id = #{id}
+	</select>
+
+
+</mapper>
+
+
+
+
+
+
+

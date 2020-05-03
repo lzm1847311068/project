@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- namespace：当前XML对应接口文件是哪个 -->
+<mapper namespace="cn.tedu.mybatis.DepartmentMapper">
+
+	<resultMap id="departmentVOMap" type="cn.tedu.mybatis.DepartmentVO">
+		<result column="did" property="id" />
+		<result column="name" property="name" />
+		<!--collection节点：用于配置一对多的数据，也可以理解为配置list集合类型的数据
+		ofType：List集合中的元素的类型-->
+		<collection property="users" ofType="cn.tedu.mybatis.User">
+			<id column="uid" property="id"/>
+			<result column="username" property="username"/>
+			<result column="password" property="password"/>
+			<result column="age" property="age"/>
+			<result column="phone" property="phone"/>
+			<result column="email" property="email"/>
+			<result column="is_delete" property="isDelete"/>
+			<result column="department_id" property="departmentId"/>
+		</collection>
+	</resultMap>
+
+
+	<select id="findById" resultMap="departmentVOMap">
+		SELECT t_department.id as did,name,
+		 t_user.id as uid,username,password,age,email,phone,
+		  is_delete,department_id FROM
+			t_department
+		left join
+			t_user on t_department.id = t_user.department_id
+		WHERE
+			t_department.id = #{id}
+	</select>
+
+
+</mapper>
+
+
+
+
+
+
+

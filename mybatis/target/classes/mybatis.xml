@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <!-- 读取db.properties中的配置 -->
+    <util:properties id="config" location="classpath:db.properties" />
+
+
+    <!--在`commons-dbcp`中，定义了`BasicDataSource`数据源类，是实现了`DataSource`数据源
+    接口的，需要把db.properties中的配置信息都注入到数据源类中，才可以利用数据源类去连接数据库，
+    从中获取数据库的连接对象
+
+    BasicDataSource中自带getConnection()方法获取数据库连接对象-->
+
+    <!-- 配置数据源 -->
+    <bean id="dataSource"
+          class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="url" value="#{config.url}" />
+        <property name="driverClassName" value="#{config.driver}" />
+        <property name="username" value="#{config.username}" />
+        <property name="password" value="#{config.password}" />
+        <property name="initialSize" value="#{config.initialSize}" />
+        <property name="maxActive" value="#{config.maxActive}" />
+    </bean>
+
+
+    <!--使得MyBatis框架知道接口文件在哪里，需要配置的类是`MapperScannerConfigurer`-->
+
+    <!-- 配置MapperScannerConfigurer -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 接口文件在哪里 -->
+        <property name="basePackage" value="cn.tedu.mybatis" />
+    </bean>
+
+
+    <!--使得MyBatis框架知道这些XML文件在哪里，并配置使用哪个数据源去连接数据库，执行配
+    置的SQL语句，需要配置的类是`SqlSessionFactoryBean`，-->
+
+    <!-- 配置SqlSessionFactoryBean -->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 使用哪个数据源,ref:引用上方beanId -->
+        <property name="dataSource" ref="dataSource" />
+        <!-- XML文件在哪里,mappers/*.xml：mappers文件夹下所有xml -->
+        <property name="mapperLocations" value="classpath:mappers/*.xml" />
+    </bean>
+</beans>
