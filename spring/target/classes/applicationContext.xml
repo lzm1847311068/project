@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 通知Spring创建哪个类的实例，id：用于区分每个对象 -->
+    <bean id="demo" class="day01.DemoBean"></bean>
+
+    <!-- alias 别名 -->
+    <alias name="demo" alias="bean1" />
+
+    <!--利用scope属性 scope="prototype" 可以创建多个对象实例-->
+    <bean id="demo1" class="day01.DemoBean" scope="prototype" />
+</beans>

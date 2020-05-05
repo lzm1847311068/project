@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- init-method="init"：用于设定对象生命周期的初始化方法，Spring会在
+		创建对象以后自动执行这个指定的init方法
+	     destroy-method="close"：用于设定对象生命周期的销毁方法，单例对象
+		时候Spring会在关闭容器，销毁对象之前自动执行这个close方法
+
+	    init和close分别是对象类中的方法名 -->
+    <bean id="logger" class="day02.LogWriter"
+          init-method="init" destroy-method="close" />
+
+
+    <!--非单例对象不能执行其对象销毁方法，即便设置destroy-method="close"
+        也不会在容器销毁时候执行其close方法-->
+    <bean id="exBean" class="day02.ExampleBean"
+          init-method="init" destroy-method="close"
+          scope="prototype" />
+
+
+    <!--测试懒惰初始化现象：设置lazy-init="true"以后，容器
+    启动时候不会立即创建DemoBean对象，在第一次使用DemoBean对象
+    时，会自动创建，创建以后，多次使用重用同一个bean对象，懒惰初始化
+    也称为延迟加载现象-->
+    <bean id="demoBean" class="day02.DemoBean" lazy-init="true" />
+
+</beans>

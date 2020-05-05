@@ -57,8 +57,8 @@
  		select count(*) from t_user;
  	</select>
 
-	<select id="findById" resultType="cn.tedu.mybatis.User">
- 		SELECT id, username, password, age, phone, email
+	<select id="findById" resultMap="UserMap">
+ 		SELECT id, username, password, age, phone, email,is_delete,department_id
  			FROM t_user WHERE id=#{id}
  	</select>
 
@@ -70,7 +70,7 @@
 
 	<!--查询时名称不一致的解决方案二：配置resultMap节点-->
 	<select id="findAll" resultMap="UserMap">
- 		SELECT id,username,password,age,phone,email,is_delete as isDelete
+ 		SELECT id,username,password,age,phone,email,is_delete
  			FROM t_user ORDER BY id ASC
  	</select>
 

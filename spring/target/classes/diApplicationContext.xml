@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="saw" class="di.Saw" />
+    <bean id="axe" class="di.Axe" />
+
+    <bean id="qiang" class="di.Worker">
+        <!--利用property标签注入Bean属性，name是被注入的bean属性名，
+        ref：是引用已经创建好的beanId，表示把beanId引用的bean对象注入到
+        目标set方法中-->
+        <property name="tools" ref="axe" />
+
+        <!--注入基本值-->
+        <property name="name" value="小强" />
+        <property name="salary" value="1000" />
+    </bean>
+
+
+
+    <!-- 利用Spring的DI功能注入集合和数组 -->
+    <bean id="testBean" class="di.TestBean">
+        <!-- 注入基本值集合 -->
+        <property name="names">
+            <!--对names进行赋值，赋值是一个list(如果是set集合，换成set标签即可)-->
+            <list>
+                <value>tom</value>
+                <value>Jerry</value>
+            </list>
+        </property>
+        <!-- 注入对象集合 -->
+        <property name="tools">
+            <list>
+                <!-- 引用上方的beanId,表示把beanId引用的bean对象注入到集合中 -->
+                <ref bean="saw"/>
+                <ref bean="axe"/>
+                <!-- 单独创建一个对象 -->
+                <bean class="di.Saw"></bean>
+            </list>
+        </property>
+        <!-- 注入map集合 -->
+        <property name="map">
+            <map>
+                <entry key="东" value="范" />
+                <entry key="南" value="田" />
+                <entry key="西" value="何" />
+                <entry key="北" value="刘" />
+            </map>
+        </property>
+        <!-- 注入基本值数组 -->
+        <property name="values">
+            <array>
+                <value>3.14</value>
+                <value>0.618</value>
+                <value>2.1</value>
+            </array>
+        </property>
+        <!-- 注入对象数组 -->
+        <property name="arr">
+            <array>
+                <ref bean="axe"/>
+                <bean class="di.Saw"></bean>
+            </array>
+        </property>
+    </bean>
+
+
+    <!-- 利用Spring的IOC、DI功能，管理数据库连接池 -->
+    <bean id="ds" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/tedu_ums?serverTimezone=Asia/Shanghai"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="maxActive" value="10"/>
+        <property name="initialSize" value="2"/>
+    </bean>
+
+</beans>

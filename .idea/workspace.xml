@@ -2,6 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05abe19d-5fe0-4d25-bb6a-911e5b0f8b88" name="Default Changelist" comment="mybati测试提交">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_3_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -31,7 +47,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1b129vp7JP3M8rCgjRTBCvjr9Df" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,101 +57,104 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis/src/main/resources/mappers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../workspace/lzm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="spring" />
     <property name="settings.editor.splitter.proportion" value="0.25460124" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test" />
       <recent name="day01" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\project-lzm\spring\src\main\resources" />
       <recent name="F:\project-lzm\mybatis\src\main\resources\mappers" />
       <recent name="F:\project-lzm\mybatis\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentTests.findById">
-    <configuration name="DepartmentTests.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
+  <component name="RunManager" selected="JUnit.diTestCase.testDataSource">
+    <configuration name="day02TestCase.testDemoBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day01.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day01" />
-      <option name="MAIN_CLASS_NAME" value="day01.DepartmentTests" />
-      <option name="METHOD_NAME" value="findById" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.day02TestCase" />
+      <option name="METHOD_NAME" value="testDemoBean" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.countAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
+    <configuration name="day02TestCase.testLogWriter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day01.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day01" />
-      <option name="MAIN_CLASS_NAME" value="day01.Tests" />
-      <option name="METHOD_NAME" value="countAll" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.day02TestCase" />
+      <option name="METHOD_NAME" value="testLogWriter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
+    <configuration name="diTestCase.testBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day01.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day01" />
-      <option name="MAIN_CLASS_NAME" value="day01.Tests" />
-      <option name="METHOD_NAME" value="findAll" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.diTestCase" />
+      <option name="METHOD_NAME" value="testBean" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
+    <configuration name="diTestCase.testDataSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day01.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day01" />
-      <option name="MAIN_CLASS_NAME" value="day01.Tests" />
-      <option name="METHOD_NAME" value="findById" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.diTestCase" />
+      <option name="METHOD_NAME" value="testDataSource" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.findVOById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
+    <configuration name="diTestCase.testDi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day01.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day01" />
-      <option name="MAIN_CLASS_NAME" value="day01.Tests" />
-      <option name="METHOD_NAME" value="findVOById" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.diTestCase" />
+      <option name="METHOD_NAME" value="testDi" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DepartmentTests.findById" />
-        <item itemvalue="JUnit.Tests.countAll" />
-        <item itemvalue="JUnit.Tests.findById" />
-        <item itemvalue="JUnit.Tests.findVOById" />
-        <item itemvalue="JUnit.Tests.findAll" />
+        <item itemvalue="JUnit.diTestCase.testDataSource" />
+        <item itemvalue="JUnit.diTestCase.testBean" />
+        <item itemvalue="JUnit.diTestCase.testDi" />
+        <item itemvalue="JUnit.day02TestCase.testDemoBean" />
+        <item itemvalue="JUnit.day02TestCase.testLogWriter" />
       </list>
     </recent_temporary>
   </component>
@@ -175,6 +196,12 @@
       <workItem from="1588389924704" duration="1331000" />
       <workItem from="1588399784320" duration="3916000" />
       <workItem from="1588491216864" duration="188000" />
+      <workItem from="1588512463480" duration="766000" />
+      <workItem from="1588566393223" duration="2800000" />
+      <workItem from="1588572176419" duration="94000" />
+      <workItem from="1588572389577" duration="8687000" />
+      <workItem from="1588588471554" duration="4535000" />
+      <workItem from="1588647641454" duration="9899000" />
     </task>
     <task id="LOCAL-00001" summary="mybati测试提交">
       <created>1588058761071</created>
@@ -194,18 +221,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="mybati测试提交" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="892" y="157" key="#Project_Structure" timestamp="1587867353005">
+    <state x="892" y="157" key="#Project_Structure" timestamp="1588673627788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="892" y="157" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1587867353005" />
+    <state x="892" y="157" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588673627788" />
     <state x="442" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587785728337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="442" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587785728337" />
-    <state x="1127" y="280" key="#com.intellij.ide.util.MemberChooser" timestamp="1588402684797">
+    <state x="1127" y="280" key="#com.intellij.ide.util.MemberChooser" timestamp="1588671517513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1127" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588402684797" />
+    <state x="1127" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588671517513" />
+    <state x="1152" y="353" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588587497294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1152" y="353" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588587497294" />
     <state x="679" y="129" key="CommitChangelistDialog2" timestamp="1588059232936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -214,46 +245,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="400" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1588140849700" />
-    <state x="1242" y="240" key="FileChooserDialogImpl" timestamp="1588059189705">
+    <state x="341" y="232" key="FileChooserDialogImpl" timestamp="1588672785249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1242" y="240" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588059189705" />
-    <state width="1763" height="271" key="GridCell.Tab.0.bottom" timestamp="1588405403134">
+    <state x="341" y="232" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588672785249" />
+    <state width="1756" height="265" key="GridCell.Tab.0.bottom" timestamp="1588688413897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1763" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588405403134" />
-    <state width="1763" height="271" key="GridCell.Tab.0.center" timestamp="1588405403134">
+    <state width="1756" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588688413897" />
+    <state width="1756" height="265" key="GridCell.Tab.0.center" timestamp="1588688413897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1763" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588405403134" />
-    <state width="1763" height="271" key="GridCell.Tab.0.left" timestamp="1588405403134">
+    <state width="1756" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588688413897" />
+    <state width="1756" height="265" key="GridCell.Tab.0.left" timestamp="1588688413897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1763" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588405403134" />
-    <state width="1763" height="271" key="GridCell.Tab.0.right" timestamp="1588405403134">
+    <state width="1756" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588688413897" />
+    <state width="1756" height="265" key="GridCell.Tab.0.right" timestamp="1588688413897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1763" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588405403134" />
-    <state width="1763" height="271" key="GridCell.Tab.1.bottom" timestamp="1588405402957">
+    <state width="1756" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588688413897" />
+    <state width="1756" height="265" key="GridCell.Tab.1.bottom" timestamp="1588688413898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1763" height="271" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588405402957" />
-    <state width="1763" height="271" key="GridCell.Tab.1.center" timestamp="1588405402956">
+    <state width="1756" height="265" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588688413898" />
+    <state width="1756" height="265" key="GridCell.Tab.1.center" timestamp="1588688413898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1763" height="271" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588405402956" />
-    <state width="1763" height="271" key="GridCell.Tab.1.left" timestamp="1588405402956">
+    <state width="1756" height="265" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588688413898" />
+    <state width="1756" height="265" key="GridCell.Tab.1.left" timestamp="1588688413897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1763" height="271" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588405402956" />
-    <state width="1763" height="271" key="GridCell.Tab.1.right" timestamp="1588405402956">
+    <state width="1756" height="265" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588688413897" />
+    <state width="1756" height="265" key="GridCell.Tab.1.right" timestamp="1588688413898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1763" height="271" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588405402956" />
-    <state x="189" y="135" key="SettingsEditor" timestamp="1588491378359">
+    <state width="1756" height="265" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588688413898" />
+    <state x="507" y="140" width="1040" height="805" key="SettingsEditor" timestamp="1588674828157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="189" y="135" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588491378359" />
+    <state x="507" y="140" width="1040" height="805" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588674828157" />
     <state x="973" y="246" width="567" height="524" key="StructurePopup" timestamp="1587867915909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -262,17 +293,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="542" y="289" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588059047137" />
-    <state x="501" y="221" key="new project wizard" timestamp="1587785212555">
+    <state x="179" y="69" key="new project wizard" timestamp="1588572429802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="501" y="221" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1587785212555" />
-    <state x="651" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1587785589013">
+    <state x="179" y="69" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1588572429802" />
+    <state x="651" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1588672607122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="651" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587785589013" />
-    <state x="840" y="337" key="spring file set editor" timestamp="1587785303297">
+    <state x="651" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588672607122" />
+    <state x="615" y="193" key="spring file set editor" timestamp="1588674820078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="840" y="337" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1587785303297" />
+    <state x="615" y="193" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1588674820078" />
   </component>
 </project>
