@@ -25,7 +25,9 @@
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <!--<artifactId>spring-context</artifactId>
+            spring-webmvc是包含spring-context的，这个范围更广泛-->
+            <artifactId>spring-webmvc</artifactId>
             <version>4.3.9.RELEASE</version>
         </dependency>
 
