@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--配置组件扫描-->
+    <context:component-scan base-package="cn.tedu" />
+
+    <!-- 模版解析器 -->
+    <bean id="templateResolver" class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+        <!--都是以webapp为基准的-->
+        <property name="prefix" value="/WEB-INF/templates/" />
+        <property name="suffix" value=".html" />
+        <property name="characterEncoding" value="utf-8" />
+        <!-- 模板模式 -->
+        <property name="templateMode" value="HTML" />
+        <!-- 是否使用缓存 -->
+        <property name="cacheable" value="false" />
+    </bean>
+
+    <!-- 模版引擎 -->
+    <bean id="templateEngine"
+          class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolver" ref="templateResolver" />
+    </bean>
+
+    <!-- 视图解析器 -->
+    <bean class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine" />
+        <property name="characterEncoding" value="utf-8" />
+    </bean>
+
+    <!-- 配置拦截器链 -->
+    <mvc:interceptors>
+        <!-- 配置第1个拦截器 -->
+        <mvc:interceptor>
+            <!-- 拦截的请求路径 -->
+            <mvc:mapping path="/index.do" />
+            <!-- 指定拦截器类 -->
+            <bean class="cn.tedu.day01.LoginInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
+</beans>

@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis" />
         <module name="spring" />
+        <module name="springmvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mybatis" target="1.5" />
       <module name="spring" target="7" />
+      <module name="springmvc" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

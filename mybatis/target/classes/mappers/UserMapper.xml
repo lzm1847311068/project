@@ -70,7 +70,7 @@
 
 	<!--查询时名称不一致的解决方案二：配置resultMap节点-->
 	<select id="findAll" resultMap="UserMap">
- 		SELECT id,username,password,age,phone,email,is_delete as isDelete
+ 		SELECT id,username,password,age,phone,email,is_delete
  			FROM t_user ORDER BY id ASC
  	</select>
 

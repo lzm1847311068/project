@@ -1,0 +1,44 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+  <!-- 一个<servlet>节点必须包含子级<servlet-name>和<servlet-class>节点，
+  还需要配<servlet mapping>节点，servlet和servlet-mapping两个节点配置一个servlet-->
+  <servlet>
+      <!-- 给Servlet取名，任意，需与<servlet-mapping>中的servlet-name保持一致 -->
+      <servlet-name>dispatcher</servlet-name>
+      <!-- serlvet所在的路径，包名，类名 -->
+      <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+      <!-- <init-param>:初始化参数 -->
+      <init-param>
+          <param-name>contextConfigLocation</param-name>
+          <param-value>classpath:springmvc.xml</param-value>
+      </init-param>
+      <!-- load：加载，on：再什么时候，start：启动,启动tomcat的时候就去加载servlet -->
+      <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+      <!--servlet映射，必须与servlet-name同名 -->
+      <servlet-name>dispatcher</servlet-name>
+      <!-- 只有.do的请求才处理 -->
+      <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+
+    <!--springMvc过滤器-->
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>cn.tedu.day01.CharacterEncodingFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
