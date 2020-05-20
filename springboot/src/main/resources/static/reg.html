@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+    <h1>用户注册</h1>
+    <form id="reg">
+        用户名：<input type="text" name="username"><br>
+        密码：<input type="text" name="password"><br>
+        年龄：<input type="text" name="age"><br>
+        手机号码：<input type="text" name="phone"><br>
+        邮箱：<input type="text" name="email"><br>
+        <input type="button" value="注册" onclick="reg()">
+    </form>
+
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript">
+        function reg(){
+            $.ajax({
+                "url":"reg",
+                "data":$("#reg").serialize(),
+                "type":"post",
+                "dataType":"json",
+                "success":function (json){
+                    if(json.status == "success"){
+                        alert("注册成功！")
+                    }else {
+                        alert("注册失败！")
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>

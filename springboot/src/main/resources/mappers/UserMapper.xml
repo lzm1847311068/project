@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- namespace：当前XML对应接口文件是哪个 -->
+<mapper namespace="cn.lzm.springboot.mapper.UserMapper">
+
+
+	<insert id="addnew">
+		 INSERT INTO t_user (
+            username, password,
+            age, phone,
+            email, is_delete,
+            department_id
+        ) VALUES (
+            #{username}, #{password},
+            #{age}, #{phone},
+            #{email}, #{isDelete},
+            #{departmentId}
+        )
+	</insert>
+
+    <select id="findByUsername" resultType="cn.lzm.springboot.entity.User">
+        SELECT
+            *
+        FROM
+            t_user
+        WHERE
+            username=#{username}
+    </select>
+
+
+</mapper>
+
+
+
+
+
+
+
