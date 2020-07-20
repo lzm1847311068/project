@@ -6,9 +6,9 @@
   <display-name>Archetype Created Web Application</display-name>
 
 
-  <!-- 一个<servlet>节点必须包含子级<servlet-name>和<servlet-class>节点，
-  还需要配<servlet mapping>节点，servlet和servlet-mapping两个节点配置一个servlet-->
-  <servlet>
+    <!-- 一个<servlet>节点必须包含子级<servlet-name>和<servlet-class>节点，
+    还需要配<servlet mapping>节点，servlet和servlet-mapping两个节点配置一个servlet-->
+    <servlet>
       <!-- 给Servlet取名，任意，需与<servlet-mapping>中的servlet-name保持一致 -->
       <servlet-name>dispatcher</servlet-name>
       <!-- serlvet所在的路径，包名，类名 -->

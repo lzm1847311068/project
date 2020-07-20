@@ -17,8 +17,9 @@
 		<result column="department_id" property="departmentId"/>
 	</resultMap>
 
-	<!-- id：对应的抽象方法的名称 -->
-	<insert id="addnew">
+	<!-- id：对应的抽象方法的名称,useGeneratedKeys="true" keyProperty="id",keyProperty是Java对象的属性名
+	 	如果插入的表id以自增列为主键，则允许 JDBC 支持自动生成主键，并可将自动生成的主键id赋值到keyProperty设置的属性中-->
+	<insert id="addnew" useGeneratedKeys="true" keyProperty="id">
 		insert into t_user(
 			username,password,age,phone,email
 		) values (
@@ -118,7 +119,6 @@
 		from t_user left join t_department on t_user.department_id = t_department.id
 		where t_user.id = #{id}
 	</select>
-
 
 </mapper>
 

@@ -1,12 +1,11 @@
 package cn.tedu.day01;
 
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import javax.servlet.http.HttpServletRequest;
+
 import javax.servlet.http.HttpSession;
-import javax.xml.transform.Source;
+
 
 @Controller
 public class UserController {

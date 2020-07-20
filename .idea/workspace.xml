@@ -7,28 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05abe19d-5fe0-4d25-bb6a-911e5b0f8b88" name="Default Changelist" comment="mybati测试提交">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springmvc_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springmvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springmvc/springmvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/springmvc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springmvc/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/cn/lzm/springboot/SpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/cn/lzm/springboot/SpringbootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/static/reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc/src/main/java/cn/tedu/day01/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/src/main/java/cn/tedu/day01/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc/target/classes/cn/tedu/day01/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/target/classes/cn/tedu/day01/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc/target/springmvc/WEB-INF/classes/cn/tedu/day01/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/target/springmvc/WEB-INF/classes/cn/tedu/day01/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc/target/springmvc/WEB-INF/classes/cn/tedu/test/DownloadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/target/springmvc/WEB-INF/classes/cn/tedu/test/DownloadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc/target/springmvc/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/target/springmvc/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,105 +91,93 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot/src/main/resources/static" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springmvc/src/main/webapp/WEB-INF" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33908045" />
     <property name="settings.editor.selected.configurable" value="spring" />
     <property name="settings.editor.splitter.proportion" value="0.25460124" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\project-lzm\springboot\src\main\resources\static" />
-      <recent name="F:\project-lzm\springboot\src\main\resources\mappers" />
-      <recent name="F:\project-lzm\springmvc\src\main\webapp\WEB-INF\templates" />
-      <recent name="F:\project-lzm\springmvc\src\main\resources" />
-      <recent name="F:\project-lzm\spring\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\project-lzm\springmvc\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="test" />
       <recent name="day01" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\project-lzm\springmvc\src\main\webapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\project-lzm\springmvc\src\main\webapp\WEB-INF" />
+      <recent name="F:\project-lzm\springboot\src\main\resources\static" />
+      <recent name="F:\project-lzm\springboot\src\main\resources\mappers" />
+      <recent name="F:\project-lzm\springmvc\src\main\webapp\WEB-INF\templates" />
+      <recent name="F:\project-lzm\springmvc\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootApplication">
-    <configuration name="SpringbootApplicationTests.addnew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot" />
+  <component name="RunManager" selected="Application.demo01">
+    <configuration name="demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="httpClient.demo01" />
+      <module name="java-lzm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.lzm.springboot.*" />
+          <option name="PATTERN" value="httpClient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.lzm.springboot" />
-      <option name="MAIN_CLASS_NAME" value="cn.lzm.springboot.SpringbootApplicationTests" />
-      <option name="METHOD_NAME" value="addnew" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringbootApplicationTests.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot" />
+    <configuration name="jdbcDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.jdbcDemo" />
+      <module name="java-lzm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.lzm.springboot.*" />
+          <option name="PATTERN" value="jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.lzm.springboot" />
-      <option name="MAIN_CLASS_NAME" value="cn.lzm.springboot.SpringbootApplicationTests" />
-      <option name="METHOD_NAME" value="getConnection" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTests.addnew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot" />
+    <configuration name="jdbcDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.jdbcDemo2" />
+      <module name="java-lzm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.lzm.springboot.*" />
+          <option name="PATTERN" value="jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.lzm.springboot" />
-      <option name="MAIN_CLASS_NAME" value="cn.lzm.springboot.UserMapperTests" />
-      <option name="METHOD_NAME" value="addnew" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTests.findByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot" />
+    <configuration name="jdbcDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.jdbcDemo3" />
+      <module name="java-lzm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.lzm.springboot.*" />
+          <option name="PATTERN" value="jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.lzm.springboot" />
-      <option name="MAIN_CLASS_NAME" value="cn.lzm.springboot.UserMapperTests" />
-      <option name="METHOD_NAME" value="findByUserName" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="day03TestCase.testPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring" />
+    <configuration name="Tests.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="day01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.day03TestCase" />
-      <option name="METHOD_NAME" value="testPerson" />
+      <option name="PACKAGE_NAME" value="day01" />
+      <option name="MAIN_CLASS_NAME" value="day01.Tests" />
+      <option name="METHOD_NAME" value="findById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -262,21 +266,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.day03TestCase.testPerson" />
-      <item itemvalue="JUnit.SpringbootApplicationTests.getConnection" />
-      <item itemvalue="JUnit.UserMapperTests.addnew" />
-      <item itemvalue="JUnit.SpringbootApplicationTests.addnew" />
-      <item itemvalue="JUnit.UserMapperTests.findByUserName" />
+      <item itemvalue="Application.jdbcDemo" />
+      <item itemvalue="Application.jdbcDemo2" />
+      <item itemvalue="Application.jdbcDemo3" />
+      <item itemvalue="JUnit.Tests.findById" />
       <item itemvalue="Spring Boot.SpringbootApplication" />
       <item itemvalue="Tomcat Server.springmvc" />
+      <item itemvalue="Application.demo01" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserMapperTests.findByUserName" />
-        <item itemvalue="JUnit.UserMapperTests.addnew" />
-        <item itemvalue="JUnit.SpringbootApplicationTests.addnew" />
-        <item itemvalue="JUnit.SpringbootApplicationTests.getConnection" />
-        <item itemvalue="JUnit.day03TestCase.testPerson" />
+        <item itemvalue="Application.demo01" />
+        <item itemvalue="JUnit.Tests.findById" />
+        <item itemvalue="Application.jdbcDemo3" />
+        <item itemvalue="Application.jdbcDemo2" />
+        <item itemvalue="Application.jdbcDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -351,6 +355,25 @@
       <workItem from="1589898348477" duration="4062000" />
       <workItem from="1589963919728" duration="3154000" />
       <workItem from="1589967127349" duration="3072000" />
+      <workItem from="1589987314971" duration="452000" />
+      <workItem from="1590143958587" duration="1212000" />
+      <workItem from="1590510139086" duration="574000" />
+      <workItem from="1590594776559" duration="1310000" />
+      <workItem from="1590736069118" duration="3011000" />
+      <workItem from="1592647191182" duration="599000" />
+      <workItem from="1592722964683" duration="1246000" />
+      <workItem from="1592806283616" duration="2873000" />
+      <workItem from="1593265947222" duration="2360000" />
+      <workItem from="1593326650154" duration="3413000" />
+      <workItem from="1593351406119" duration="3340000" />
+      <workItem from="1593501607414" duration="5241000" />
+      <workItem from="1593598773662" duration="6687000" />
+      <workItem from="1593668604741" duration="327000" />
+      <workItem from="1593754707147" duration="5680000" />
+      <workItem from="1593932926566" duration="807000" />
+      <workItem from="1594028040448" duration="1882000" />
+      <workItem from="1594129809272" duration="741000" />
+      <workItem from="1595246226567" duration="2368000" />
     </task>
     <task id="LOCAL-00001" summary="mybati测试提交">
       <created>1588058761071</created>
@@ -370,18 +393,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="mybati测试提交" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="751" y="167" key="#Project_Structure" timestamp="1588920729050">
+    <state x="751" y="167" key="#Project_Structure" timestamp="1593620628231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="751" y="167" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588920729050" />
-    <state x="515" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588867493750">
+    <state x="751" y="167" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1593620628231" />
+    <state x="627" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590510246146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="515" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588867493750" />
-    <state x="1127" y="280" key="#com.intellij.ide.util.MemberChooser" timestamp="1589965016909">
+    <state x="627" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590510246146" />
+    <state x="1127" y="280" key="#com.intellij.ide.util.MemberChooser" timestamp="1593266475135">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1127" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589965016909" />
+    <state x="1127" y="280" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593266475135" />
     <state x="1152" y="353" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588587497294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -402,78 +425,78 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="118" y="157" width="1342" height="704" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588916874285" />
-    <state x="977" y="326" key="FileChooserDialogImpl" timestamp="1589798032611">
+    <state x="977" y="326" key="FileChooserDialogImpl" timestamp="1590510309931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="977" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589798032611" />
-    <state width="1876" height="378" key="GridCell.Tab.0.bottom" timestamp="1589986967965">
+    <state x="977" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590510309931" />
+    <state width="1876" height="251" key="GridCell.Tab.0.bottom" timestamp="1595249906025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967965" />
-    <state width="1876" height="378" key="GridCell.Tab.0.center" timestamp="1589986967965">
+    <state width="1876" height="251" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595249906025" />
+    <state width="1876" height="251" key="GridCell.Tab.0.center" timestamp="1595249906025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="378" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967965" />
-    <state width="1876" height="378" key="GridCell.Tab.0.left" timestamp="1589986967965">
+    <state width="1876" height="251" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595249906025" />
+    <state width="1876" height="251" key="GridCell.Tab.0.left" timestamp="1595249906025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="378" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967965" />
-    <state width="1876" height="378" key="GridCell.Tab.0.right" timestamp="1589986967965">
+    <state width="1876" height="251" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595249906025" />
+    <state width="1876" height="251" key="GridCell.Tab.0.right" timestamp="1595249906025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="378" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967965" />
-    <state width="1876" height="253" key="GridCell.Tab.1.bottom" timestamp="1589986967958">
+    <state width="1876" height="251" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595249906025" />
+    <state width="1482" height="287" key="GridCell.Tab.1.bottom" timestamp="1595249906009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="253" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967958" />
-    <state width="1876" height="253" key="GridCell.Tab.1.center" timestamp="1589986967958">
+    <state width="1482" height="287" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595249906009" />
+    <state width="1482" height="287" key="GridCell.Tab.1.center" timestamp="1595249906008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="253" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967958" />
-    <state width="1876" height="253" key="GridCell.Tab.1.left" timestamp="1589986967958">
+    <state width="1482" height="287" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595249906008" />
+    <state width="1482" height="287" key="GridCell.Tab.1.left" timestamp="1595249906008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="253" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967958" />
-    <state width="1876" height="253" key="GridCell.Tab.1.right" timestamp="1589986967958">
+    <state width="1482" height="287" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595249906008" />
+    <state width="1482" height="287" key="GridCell.Tab.1.right" timestamp="1595249906009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="253" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967958" />
-    <state width="1876" height="253" key="GridCell.Tab.2.bottom" timestamp="1589986967959">
+    <state width="1482" height="287" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595249906009" />
+    <state width="1482" height="99" key="GridCell.Tab.2.bottom" timestamp="1593527317922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="253" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967959" />
-    <state width="1876" height="253" key="GridCell.Tab.2.center" timestamp="1589986967959">
+    <state width="1482" height="99" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593527317922" />
+    <state width="1482" height="99" key="GridCell.Tab.2.center" timestamp="1593527317922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="253" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967959" />
-    <state width="1876" height="253" key="GridCell.Tab.2.left" timestamp="1589986967958">
+    <state width="1482" height="99" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593527317922" />
+    <state width="1482" height="99" key="GridCell.Tab.2.left" timestamp="1593527317922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="253" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967958" />
-    <state width="1876" height="253" key="GridCell.Tab.2.right" timestamp="1589986967959">
+    <state width="1482" height="99" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593527317922" />
+    <state width="1482" height="99" key="GridCell.Tab.2.right" timestamp="1593527317922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="253" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589986967959" />
-    <state width="1211" height="270" key="GridCell.Tab.3.bottom" timestamp="1589382049072">
+    <state width="1482" height="99" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593527317922" />
+    <state width="1211" height="222" key="GridCell.Tab.3.bottom" timestamp="1592821814157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1211" height="270" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589382049072" />
-    <state width="1211" height="270" key="GridCell.Tab.3.center" timestamp="1589382049072">
+    <state width="1211" height="222" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592821814157" />
+    <state width="1211" height="222" key="GridCell.Tab.3.center" timestamp="1592821814157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1211" height="270" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589382049072" />
-    <state width="1211" height="270" key="GridCell.Tab.3.left" timestamp="1589382049072">
+    <state width="1211" height="222" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592821814157" />
+    <state width="1211" height="222" key="GridCell.Tab.3.left" timestamp="1592821814157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1211" height="270" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589382049072" />
-    <state width="1211" height="270" key="GridCell.Tab.3.right" timestamp="1589382049072">
+    <state width="1211" height="222" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592821814157" />
+    <state width="1211" height="222" key="GridCell.Tab.3.right" timestamp="1592821814157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1211" height="270" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589382049072" />
-    <state x="448" y="144" width="1040" height="805" key="SettingsEditor" timestamp="1589380251685">
+    <state width="1211" height="222" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592821814157" />
+    <state x="657" y="150" width="1040" height="805" key="SettingsEditor" timestamp="1590510694070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="448" y="144" width="1040" height="805" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589380251685" />
+    <state x="657" y="150" width="1040" height="805" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590510694070" />
     <state x="973" y="246" width="567" height="524" key="StructurePopup" timestamp="1589204932459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -486,17 +509,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="684" y="483" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1589380082623" />
-    <state x="560" y="153" key="new project wizard" timestamp="1589797999378">
+    <state x="461" y="159" key="new project wizard" timestamp="1593619524587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="153" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1589797999378" />
-    <state x="651" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1588759189826">
+    <state x="461" y="159" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1593619524587" />
+    <state x="651" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1593622733605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="651" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588759189826" />
+    <state x="651" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593622733605" />
     <state x="675" y="290" key="spring file set editor" timestamp="1588759140925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="290" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1588759140925" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project_lzm$demo01.ic" NAME="demo01 Coverage Results" MODIFIED="1595247619694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>httpClient.*</FILTER>
+    </SUITE>
   </component>
 </project>
