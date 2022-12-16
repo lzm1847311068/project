@@ -28,7 +28,7 @@
             <!--<artifactId>spring-context</artifactId>
             spring-webmvc是包含spring-context的，这个范围更广泛-->
             <artifactId>spring-webmvc</artifactId>
-            <version>4.3.9.RELEASE</version>
+            <version>5.2.20.RELEASE</version>
         </dependency>
 
         <!--Junit单元测试-->
